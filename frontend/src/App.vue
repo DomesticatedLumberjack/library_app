@@ -8,17 +8,21 @@ import { CContainer } from '@coreui/vue';
 
 <template>
   <NavBar/>
-  <CContainer class="router-outlet" xl>
-    <RouterView/>
+  <CContainer class="router-outlet">
+    <RouterView />
   </CContainer>
   <Footer class="footer"/>
 </template>
 
-<style scoped>
+<style>
   .footer{
     margin-bottom: auto;
   }
   .router-outlet{
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 100px 0px;
+  }
+
+  .clickable{
+    cursor: pointer;
   }
 </style>
